@@ -7,10 +7,45 @@
     <link rel="stylesheet" href="./build/style/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#150E28]">
+  <body class="bg-[#150E28] relative scroll-smooth">
+    <!-- The mobile nav -->
+    <div
+      class="fixed top-0 left-0 right-0 bottom-0 bg-[#150E28] lg:hidden z-50 overflow-hidden px-8 text-white font-bold py-36 hidden"
+      id="nav-mobile"
+    >
+      <div class="flex w-full items-end justify-end">
+        <img
+          src="./build/imgs/Group 11.png"
+          alt=""
+          class="cursor-pointer"
+          id="close-btn"
+        />
+      </div>
+
+      <div
+        class="flex flex-col justify-center items-start gap-8 w-full md:mx-auto"
+      >
+        <nav>
+          <ul
+            class="flex gap-y-8 flex-col text-[16px] justify-between items-start"
+          >
+            <li class="nav-mobile-link"><a href="#overView">Overview</a></li>
+            <li class="nav-mobile-link"><a href="#FAQs">FAQs</a></li>
+            <li class="nav-mobile-link"><a href="#imeline">Timeline</a></li>
+            <li class="nav-mobile-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a
+          href="#"
+          class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-[172px] text-center"
+          >Register</a
+        >
+      </div>
+    </div>
+
     <!-- the heaer -->
     <header
-      class="text-white bg-blck p-8 border-b-[2px] border-[#FFFFFF] border-opacity-[18%]"
+      class="text-white p-8 border-b-[2px] border-[#FFFFFF] border-opacity-[18%] z-20"
     >
       <section class="mx-auto flex flex-row justify-between items-center">
         <div>
@@ -20,17 +55,16 @@
         </div>
 
         <div
-          class="lg:flex flex-row justify-between items-center hidden gap-64"
+          class="lg:flex flex-row justify-between items-center hidden gap-40"
         >
-          <nav>
+          <nav class="z-20">
             <ul
               class="flex gap-x-[3rem] text-[16px] justify-between items-center"
             >
-              <li><a href="#">Timeline</a></li>
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#overView">Overview</a></li>
+              <li><a href="#FAQs">FAQs</a></li>
+              <li><a href="#imeline">Timeline</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <a
@@ -40,8 +74,13 @@
           >
         </div>
 
-        <div class="flex lg:hidden">
-          <img src="./build/imgs/Vector.svg" alt="" />
+        <div class="flex lg:hidden z-20">
+          <img
+            src="./build/imgs/Vector.svg"
+            alt=""
+            class="cursor-pointer"
+            id="nav-btn"
+          />
         </div>
       </section>
     </header>
@@ -53,7 +92,7 @@
       <div
         class="flex flex-col bg-ed-900 lg:w-1/2 relative mx-auto w-full justify-center"
         data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos-anchor-placement="bottom-bom"
         data-aos-duration="1000"
       >
         <div class="flex-col items-end flex lg:hidden mx-auto">
@@ -135,6 +174,7 @@
     <!-- Intro section -->
     <div
       class="flex text-white lg:px-[40px] px-[20px] flex-col lg:flex-row relative items-center justify-center space-y-10 border-b-[2px] border-[#FFFFFF] border-opacity-[18%] py-12 overflow-hidden"
+      id="overView"
     >
       <div
         class="absolute lg:-bottom-[20rem] hidden lg:block md:-bottom-[20rem] rotate-180 -left-[12rem]"
@@ -308,6 +348,7 @@
     <!-- FAQ -->
     <div
       class="flex text-white lg:px-[40px] px-[20px] flex-col lg:flex-row relative items-center justify-center space-y-10 border-b-[2px] border-[#FFFFFF] border-opacity-[18%] py-12 overflow-hidden"
+      id="FAQs"
     >
       <div
         class="flex flex-col items-center justify-center space-y-10 lg:w-1/2 w-full lg:items-start lg:ml-10"
@@ -376,6 +417,7 @@
     <!-- Time Line -->
     <div
       class="flex text-white lg:px-[40px] px-[20px] flex-col relative items-center justify-center space-y-10 border-b-[2px] border-[#FFFFFF] border-opacity-[18%] py-12"
+      id="imeline"
     >
       <div class="flex flex-col items-center justify-center text-center">
         <h2 class="text-[32px] font-bold">Timeline</h2>
@@ -790,7 +832,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="relative lg:px-24">
+    <footer class="relative lg:px-24" id="contact">
       <div
         class="flex flex-col lg:flex-row text-white lg:px-[40px] px-[20px] relative items-center justify-between py-12 overflow-hidden space-y-14 lg:space-y-0"
       >
@@ -818,9 +860,9 @@
           <div class="">
             <h1 class="text-3xl font-bold text-[#D434FE] mb-4">Useful Links</h1>
             <ul>
-              <li class="mb-4"><a href="#">Overview</a></li>
-              <li class="mb-4"><a href="#">Timeline</a></li>
-              <li class="mb-4"><a href="#">FAQs</a></li>
+              <li class="mb-4"><a href="#overView">Overview</a></li>
+              <li class="mb-4"><a href="#FAQs">Timeline</a></li>
+              <li class="mb-4"><a href="#imeline">FAQs</a></li>
               <li class="mb-4"><a href="#">Register</a></li>
             </ul>
             <div class="flex items-center gap-8">
@@ -898,8 +940,6 @@
     </form> -->
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="./build/js/index.js"></script>
   <!-- <script src="./js/contact-form.js"></script> -->
 </html>
