@@ -13,3 +13,8 @@
   color: transparent;
   background-image: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
 }
+
+option {
+  color: white;
+  background-color: #150e28;
+}
