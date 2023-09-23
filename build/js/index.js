@@ -6,25 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileLinks = document.querySelectorAll(".nav-mobile-link");
   const body = document.body;
 
-  // Function to open the mobile menu
   function openMobileMenu() {
     mobileMenu.classList.remove("hidden");
-    body.style.overflowY = "hidden"; // Prevent scrolling of the body
+    body.style.overflowY = "hidden";
   }
 
-  // Function to close the mobile menu
   function closeMobileMenu() {
     mobileMenu.classList.add("hidden");
-    body.style.overflowY = "auto"; // Allow scrolling of the body
+    body.style.overflowY = "auto";
   }
 
-  // Event listener to open the mobile menu
   toggleButton.addEventListener("click", openMobileMenu);
 
-  // Event listener to close the mobile menu
   closeButton.addEventListener("click", closeMobileMenu);
 
-  // Event listener for smooth scrolling (similar to your existing code)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -39,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-      // Close the mobile menu when a link is clicked
       closeMobileMenu();
     });
   });

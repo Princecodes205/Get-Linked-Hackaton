@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./build/style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#150E28]">
+    <header class="text-white p-8 z-20">
+      <section
+        class="mx-auto lg:flex flex-row justify-between items-center hidden"
+      >
+        <div>
+          <h1 class="text-3xl font-bold">
+            get<span class="text-[#D434FE]">linked</span>
+          </h1>
+        </div>
+        <div
+          class="lg:flex flex-row justify-between items-center hidden gap-40"
+        >
+          <nav class="z-20">
+            <ul
+              class="flex gap-x-[3rem] text-[16px] justify-between items-center"
+            >
+              <li><a href="./index.html#overView">Overview</a></li>
+              <li><a href="./index.html#FAQs">FAQs</a></li>
+              <li><a href="./index.html#imeline">Timeline</a></li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="#"
+            class="relative rounded-sm px-[2px] py-[2px] w-[x] text-center grid place-content-center"
+          >
+            <span
+              class="absolute inset-0 bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm"
+            ></span>
+            <span class="relative z-10 bg-[#150E28] px-5 p-2 w-[172px]"
+              >Register</span
+            >
+          </a>
+        </div>
+        <div class="flex lg:hidden z-20">
+          <img
+            src="./build/imgs/Vector.svg"
+            alt=""
+            class="cursor-pointer"
+            id="nav-btn"
+          />
+        </div>
+      </section>
+
+      <section class="hidden">
+        <h1>Register</h1>
+      </section>
+    </header>
+
+    <div
+      class="flex lg:flex-row flex-col w-full items-center justify-center h-100vh bg-ed-900 lg:px-20 px-o"
+    >
+      <div class="w-1/2 bg-gree-900">
+        <div class="bg-e">
+          <img src="./build/imgs/Group 12.png" alt="" class="" />
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 text-white w-full">
+        <div
+          class="lg:bg-[#FFFFFF08]  rounded-md p-10 flex flex-col gap-10  items-center justify-center  relative h-full"
+        >
+          <div class="text-start w-full items-start justify-center ">
+            <h2 class="text-[#D434FE] text-xl font-bold mb-8">
+              Register
+            </h2>
+
+            <div class="flex items-center justify-start mb-4 ">
+                <p class="text-[10px]">Be part of this movement!</p>
+                <img src="./build/imgs/Group 13.png" alt="" class="max-w-[50px]">
+            </div>
+
+            <div>
+                <p class="font-bold text-2xl">CREATE YOUR ACCOUNT</p>
+            </div>
+          </div>
+          <form action="" id="registerForm" class="w-full bg900">
+            <div class="lg:flex lg:flex-row flex-col gap-2 mb-4">
+              <div class="flex flex-col w-full lg:w-1/2">
+                <label for="teamName" class="mb-4">Team's Name</label>
+                <input
+                  type="text"
+                  id="teamName"
+                  name="team_name"
+                  class="w-full h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+                  placeholder="Enter the name of your group"
+                  required
+                />
+              </div>
+          
+              <div class="flex flex-col w-full lg:w-1/2">
+                <label for="phone" class="mb-4">Phone</label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone_number"
+                  class="w-full h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="lg:flex lg:flex-row flex-col gap-2">
+              <div class="flex flex-col w-full lg:w-1/2">
+                <label for="email" class="mb-4">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="group_email"
+                  class="w-full h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+                  placeholder="Enter your email addresses"
+                  required
+                />
+              </div>
+          
+              <div class="flex flex-col w-full lg:w-1/2">
+                <label for="projectTopic" class="mb-4">Project Topic</label>
+                <input
+                  type="text"
+                  id="projectTopic"
+                  name="first_name"
+                  class="w-full h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+                  placeholder="What is your group project topic"
+                  required
+                />
+              </div>
+            </div>
+          
+            <div class="flex flex-row gap-2">
+                <div class="flex flex-col w-full lg:w-1/2">
+                  <label for="category" class="mb-4">Category</label>
+                  <select
+                    name="category"
+                    id="category"
+                    class="h-11 outline-none rounded-sm bg-transparent border border-white pl-4 text-white w-full lg:w-auto"
+                  >
+                    <option value="" disabled selected>Select an option</option>
+                    <option
+                      value="1"
+                      class="bg-transparent text-black"
+                    >
+                      MOBILE
+                    </option>
+                    <option
+                      value="2"
+                      class="bg-transparent text-black"
+                    >
+                      WEB
+                    </option>
+                    <option
+                      value="3"
+                      class="bg-transparent text-black"
+                    >
+                      BACKEND
+                    </option>
+                  </select>
+                </div>
+              
+                <div class="flex flex-col w-full lg:w-1/2">
+                  <label for="groupSize" class="mb-4">Group Size</label>
+                  <select
+                    name="group_size"
+                    id="groupSize"
+                    class="h-11 outline-none rounded-sm bg-transparent border border-white pl-4 text-white w-full lg:w-auto"
+                  >
+                    <option value="" disabled selected>Select an option</option>
+                    <option
+                      value="5"
+                      class="bg-transparent text-black"
+                    >
+                      5
+                    </option>
+                    <option
+                      value="6"
+                      class="bg-transparent text-black"
+                    >
+                      6
+                    </option>
+                    <option
+                      value="7"
+                      class="bg-transparent text-black"
+                    >
+                      7
+                    </option>
+                    <option
+                      value="8"
+                      class="bg-transparent text-black"
+                    >
+                      8
+                    </option>
+                    <option
+                      value="9"
+                      class="bg-transparent text-black"
+                    >
+                      9
+                    </option>
+                    <option
+                      value="10"
+                      class="bg-transparent text-black"
+                    >
+                      10
+                    </option>
+                  </select>
+                </div>
+              </div>
+              
+          
+            <div class="mb-8">
+              <p class="text-[#D434FE]">Please review your registration details before submitting</p>
+              <div class="flex items-center justify-start gap-2">
+                <input type="checkbox" id="privacy_policy" name="privacy_poclicy_accepted" value="true"/>
+                <p>I agree with the event terms and conditions and privacy policy</p>
+              </div>
+            </div>
+          
+            <div id="errorContainer" class="text-red-600 mb-4"></div>
+          
+            <button
+              type="button"
+              id="submitForm"
+              class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-full mx-auto text-center"
+            >
+              <span class="hidden lg:block">Register Now</span>
+              <span class="lg:hidden block">Submit</span>
+            </button>
+          </form>
+          
+          
+          <!-- <form id="contactForm" class="grid gap-8 placecontent-center w-full">
+            <input
+              type="text"
+              id="name"
+              name="first_name"
+              class="max-w-[400px] h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="max-w-[400px] h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="Mail"
+              required
+            />
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              class="max-w-[400px] h-[119px] outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div id="resultMessage"></div>
+            <button
+              type="button"
+              id="submitForm"
+              class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-[172px] mx-auto text-center"
+            >
+              Submit
+            </button>
+          </form> -->
+         
+      </div>
+    </div>
+
+    <img
+    src="./build/imgs/Purple-Lens-Flare-PNG.png"
+    class="absolute top-0 -left-11 -rotate-180 w-[400px] -z-20"
+    alt=""
+  />
+  <img
+    src="./build/imgs/Purple-Lens-Flare-PNG.png"
+    class="absolute bottom-0 right-0 w-[400px]  -z-20"
+    alt=""
+  />
+
+  <img
+  src="./build/imgs/star pu.png"
+  alt=""
+  class="absolute top-0 left-0 w-6"
+/>
+<img
+  src="./build/imgs/star (1).png"
+  alt=""
+  class="absolute top-0 right-0 w-6"
+/>
+  </body>
+  <script src="./build/js/application.js"></script>
+</html>
