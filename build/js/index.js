@@ -1,41 +1,47 @@
 "use strict";
-const navBtn = document.getElementById("nav-btn");
-const closeBtn = document.getElementById("close-btn");
-const navMobile = document.getElementById("nav-mobile");
-const mobileLinks = document.querySelectorAll(".nav-mobile-link");
-const body = document.body;
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("nav-btn");
+  const mobileMenu = document.getElementById("nav-mobile");
+  const closeButton = document.getElementById("close-btn");
+  const mobileLinks = document.querySelectorAll(".nav-mobile-link");
+  const body = document.body;
 
-navBtn.addEventListener("click", () => {
-  console.log("Checked");
-  navMobile.classList.remove("hidden");
-  body.style.overflowY = "hidden"; // Prevent scrolling of the body
-});
+  // Function to open the mobile menu
+  function openMobileMenu() {
+    mobileMenu.classList.remove("hidden");
+    body.style.overflowY = "hidden"; // Prevent scrolling of the body
+  }
 
-closeBtn.addEventListener("click", () => {
-  navMobile.classList.add("hidden");
-  body.style.overflowY = "auto"; // Allow scrolling of the body
-});
+  // Function to close the mobile menu
+  function closeMobileMenu() {
+    mobileMenu.classList.add("hidden");
+    body.style.overflowY = "auto"; // Allow scrolling of the body
+  }
 
-mobileLinks.forEach((el) => {
-  navMobile.classList.remove("hidden");
-  el.addEventListener("click", () => {
-    navMobile.classList.add("hidden");
-  });
-});
+  // Event listener to open the mobile menu
+  toggleButton.addEventListener("click", openMobileMenu);
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+  // Event listener to close the mobile menu
+  closeButton.addEventListener("click", closeMobileMenu);
 
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
+  // Event listener for smooth scrolling (similar to your existing code)
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth", // Add smooth scrolling behavior
-      });
-    }
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
+
+      // Close the mobile menu when a link is clicked
+      closeMobileMenu();
+    });
   });
 });
 

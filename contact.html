@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./build/style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#150E28] relative">
+    <header class="text-white p-8 z-20">
+      <section
+        class="mx-auto lg:flex flex-row justify-between items-center hidden"
+      >
+        <div>
+          <h1 class="text-3xl font-bold">
+            get<span class="text-[#D434FE]">linked</span>
+          </h1>
+        </div>
+        <div
+          class="lg:flex flex-row justify-between items-center hidden gap-40"
+        >
+          <nav class="z-20">
+            <ul
+              class="flex gap-x-[3rem] text-[16px] justify-between items-center"
+            >
+              <li><a href="./index.html#overView">Overview</a></li>
+              <li><a href="./index.html#FAQs">FAQs</a></li>
+              <li><a href="./index.html#imeline">Timeline</a></li>
+              <li>
+                <a href="#" class="gradient-text">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="#"
+            class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-[172px] text-center"
+            >Register</a
+          >
+        </div>
+        <div class="flex lg:hidden z-20">
+          <img
+            src="./build/imgs/Vector.svg"
+            alt=""
+            class="cursor-pointer"
+            id="nav-btn"
+          />
+        </div>
+      </section>
+      <section class="w-full flex items-start lg:hidden">
+        <a href="." class="cursor-pointer"
+          ><img src="./build/imgs/Group 1.png" alt=""
+        /></a>
+      </section>
+    </header>
+    <div
+      class="heightHero flex lg:flex-row flex-col items-center justify-center text-white m-auto lg:px-28 relative"
+    >
+      <div class="w-1/2 lg:grid gap-4 hidden">
+        <h1 class="text-[#D434FE] text-3xl font-bold">Get in touch</h1>
+        <p class="text-base">
+          Contact <br />
+          Information
+        </p>
+        <p class="text-base">
+          27, Alara Street <br />
+          Yaba 100012 <br />
+          Lagos State
+        </p>
+        <p class="text-base">Call Us : 07067981819</p>
+        <p class="text-base">
+          We are open from Monday-Friday <br />
+          08:00am - 05:00pm
+        </p>
+        <p class="text-[#D434FE]">Share on</p>
+        <div class="flex items-center gap-8">
+          <img src="./build/imgs/mdi_instagram.png" alt="" />
+          <img src="./build/imgs/Vector.png" alt="" />
+          <img src="./build/imgs/Vector (1).png" alt="" />
+          <img src="./build/imgs/ri_linkedin-fill.png" alt="" />
+        </div>
+      </div>
+      <div class="lg:w-1/2 w-full flex items-center justify-center">
+        <div
+          class="lg:bg-[#FFFFFF08] bg-transparent rounded-md p-12 flex flex-col gap-10 lg:items-start items-center justify-center max-w-[460px] relative h-full"
+        >
+          <div>
+            <h2 class="text-[#D434FE] text-xl font-bold">
+              Questions or need assistance?<br />Let us know about it!
+            </h2>
+          </div>
+          <form id="contactForm" class="grid gap-8 placecontent-center w-full">
+            <input
+              type="text"
+              id="name"
+              name="first_name"
+              class="max-w-[400px] h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="max-w-[400px] h-11 outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="Mail"
+              required
+            />
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              class="max-w-[400px] h-[119px] outline-none rounded-sm bg-[#FFFFFF08] pl-[29px] border border-white"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div id="resultMessage"></div>
+            <button
+              type="button"
+              id="submitForm"
+              class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-[172px] mx-auto text-center"
+            >
+              Submit
+            </button>
+          </form>
+          <div class="flex flex-col items-center justify-center lg:hidden">
+            <p class="text-[#D434FE]">Share on</p>
+            <div class="flex items-center gap-8">
+              <img src="./build/imgs/mdi_instagram.png" alt="" class="w-5" />
+              <img src="./build/imgs/Vector.png" alt="" class="w-5" />
+              <img src="./build/imgs/Vector (1).png" alt="" class="w-2" />
+              <img src="./build/imgs/ri_linkedin-fill.png" alt="" class="w-5" />
+            </div>
+          </div>
+          <img
+            src="./build/imgs/star pu.png"
+            alt=""
+            class="absolute bottom-4 -left-2 w-6"
+          />
+          <img
+            src="./build/imgs/star.png"
+            alt=""
+            class="absolute bottom-12 right-0 w-6"
+          />
+        </div>
+        <img
+          src="./build/imgs/Purple-Lens-Flare-PNG.png"
+          class="absolute top-0 -left-11 -rotate-180 w-[400px] -z-10"
+          alt=""
+        />
+        <img
+          src="./build/imgs/Purple-Lens-Flare-PNG.png"
+          class="absolute bottom-0 right-0 w-[400px] lg:block hidden"
+          alt=""
+        />
+        <img
+          src="./build/imgs/star pu.png"
+          alt=""
+          class="absolute top-0 left-0 w-6"
+        />
+        <img
+          src="./build/imgs/star (1).png"
+          alt=""
+          class="absolute top-0 right-0 w-6"
+        />
+      </div>
+    </div>
+    <script src="./build/js/contact-form.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@
   <body class="bg-[#150E28] relative scroll-smooth">
     <!-- The mobile nav -->
     <div
-      class="fixed top-0 left-0 right-0 bottom-0 bg-[#150E28] z-50 overflow-hidden px-8 text-white font-bold py-36 hidden"
+      class="fixed top-0 left-0 right-0 bottom-0 bg-[#150E28] z-50 px-8 text-white font-bold py-36 lg:hidden hidden"
       id="nav-mobile"
     >
       <div class="flex w-full items-end justify-end">
@@ -23,21 +23,25 @@
       </div>
 
       <div
-        class="flex flex-col justify-center items-start gap-8 w-full md:mx-auto"
+        class="flex flex-col justify-center items-start gap-8 w-full md:mx-auto m-auto h-full my-auto"
       >
         <nav>
           <ul
-            class="flex gap-y-8 flex-col text-[16px] justify-between items-start"
+            class="flex gap-y-8 flex-col text-2xl justify-between items-start"
           >
-            <li class="nav-mobile-link"><a href="#overView">Overview</a></li>
+            <li class="nav-mobile-link">
+              <a href="#overView" class="">Overview</a>
+            </li>
             <li class="nav-mobile-link"><a href="#FAQs">FAQs</a></li>
             <li class="nav-mobile-link"><a href="#imeline">Timeline</a></li>
-            <li class="nav-mobile-link"><a href="#contact">Contact</a></li>
+            <li class="nav-mobile-link">
+              <a href="./contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
         <a
           href="#"
-          class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-5 p-2 w-[172px] text-center"
+          class="bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-sm px-7 py-2 text-center text-2xl"
           >Register</a
         >
       </div>
@@ -64,7 +68,7 @@
               <li><a href="#overView">Overview</a></li>
               <li><a href="#FAQs">FAQs</a></li>
               <li><a href="#imeline">Timeline</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
           <a
